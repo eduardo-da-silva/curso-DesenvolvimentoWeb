@@ -1,0 +1,40 @@
+h1 {
+    text-align: center;
+    margin: 20px 0 0 0;
+    font-size: 1.25em;
+    font-weight: normal;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Flex Container */
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    border: 2px solid green;
+    display: flex;
+}
+
+.row {
+    flex-direction: row;
+}
+.row-reverse {
+    flex-direction: row-reverse;
+}
+.column {
+    flex-direction: column;
+}
+.column-reverse {
+    flex-direction: column-reverse;
+}
+
+/* Flex Item */
+.item {
+    flex: 1;
+    margin: 5px;
+    background: cadetblue;
+    text-align: center;
+    font-size: 1.5em;
+}

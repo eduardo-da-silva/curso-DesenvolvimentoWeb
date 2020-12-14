@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <style>
+      #seletor-id {
+        background-color: aqua;
+      }
+      .seletor-classe {
+        background-color: bisque;
+      }
+      .seletor-classe:hover {
+        background-color: brown;
+        color: white;
+      }
+      .seletor-classe::first-letter {
+        font-size: 40px;
+        font-weight: bold;
+      }
+      [minha-cor] {
+        background-color: blueviolet;
+      }
+      [minha-cor="verde"] {
+        background-color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="seletor-id">Seletor ID</div>
+    <div class="seletor-classe">Seletor Classe</div>
+    <div minha-cor>Seletor com atributo</div>
+    <div minha-cor="verde">Seletor com atributo</div>
+  </body>
+</html>

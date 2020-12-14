@@ -1,0 +1,68 @@
+<html>
+  <head>
+    <style>
+      body {
+        height: 1000px;
+      }
+      .caixa {
+        border: solid 2px black;
+        padding: 20px;
+      }
+      .static {
+        background-color: coral;
+        position: static;
+        top: 100px; /* Não possui efeito no posicionamento */
+        right: 30px; /* Não possui efeito no posicionamento */
+      }
+      .fixed {
+        background-color: darkcyan;
+        position: fixed;
+        bottom: 40px;
+        right: 20px;
+      }
+      .relative {
+        background-color: firebrick;
+        position: relative;
+        top: 30px;
+      }
+      .absolute {
+        background-color: bisque;
+        position: absolute;
+        top: 30px;
+        right: 40px;
+      }
+      .caixa-relative {
+        position: relative;
+        top: 50px;
+        background-color: burlywood;
+        margin-bottom: 20px;
+        /* overflow: hidden; */
+      }
+      .caixa-absolute {
+        position: absolute;
+        top: 5px;
+        left: 200px;
+        width: 150px;
+        border: solid 2px black;
+        background-color: cornflowerblue;
+      }
+
+      .sticky {
+        position: sticky;
+        top: 20px;
+        background-color: cadetblue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="caixa static">Posição: static</div>
+    <div class="caixa fixed">Posição: fixed</div>
+    <div class="caixa relative">Posição: relative</div>
+    <div class="caixa absolute">Posição: absolute</div>
+    <div class="caixa caixa-relative">
+      Caixa externa
+      <div class="caixa-absolute">Caixa Interna</div>
+    </div>
+    <div class="caixa sticky">Posição: Sticky</div>
+  </body>
+</html>

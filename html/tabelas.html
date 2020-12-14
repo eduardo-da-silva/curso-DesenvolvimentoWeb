@@ -1,0 +1,83 @@
+<h1>Tabelas</h1>
+
+<table>
+  <caption>
+    Notas de alunos
+  </caption>
+  <thead>
+    <tr>
+      <th>Aluno</th>
+      <th>Nota 1</th>
+      <th>Nota 2</th>
+      <th>Média</th>
+      <th>Situação</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>John</td>
+      <td>7.0</td>
+      <td>4.0</td>
+      <td>5.5</td>
+      <td>Reprovado</td>
+    </tr>
+    <tr>
+      <td>Ringo</td>
+      <td>9.0</td>
+      <td>7.0</td>
+      <td>8.8</td>
+      <td>Aprovado</td>
+    </tr>
+    <tr>
+      <td>Paul</td>
+      <td>8.0</td>
+      <td>9.0</td>
+      <td>8.5</td>
+      <td>Aprovado</td>
+    </tr>
+    <tr>
+      <td>George</td>
+      <td>5.0</td>
+      <td>6.0</td>
+      <td>5.5</td>
+      <td>Reprovado</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td rowspan="2" colspan="2">Resumo</td>
+      <td colspan="2">Aprovados</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td colspan="2">Reprovados</td>
+      <td>2</td>
+    </tr>
+  </tfoot>
+</table>
+
+<style>
+  table {
+    border-collapse: collapse;
+  }
+
+  td,
+  th {
+    padding: 8px;
+  }
+
+  thead tr {
+    border-bottom: solid 2px black;
+  }
+
+  tbody tr:hover {
+    background-color: azure;
+    font-weight: bold;
+  }
+
+  tfoot {
+    background-color: #444;
+    color: white;
+    font-weight: bold;
+  }
+</style>

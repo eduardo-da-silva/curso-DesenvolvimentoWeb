@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <style>
+      #exemplo {
+        background-color: brown;
+        font-size: 100px;
+      }
+      .principal {
+        background-color: aqua;
+        font-size: 50px;
+        color: blue;
+      }
+
+      .principal p {
+        background-color: bisque;
+        font-size: 80px;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+      1. regra !important
+      2. seletores mais específicos
+      3. caso tenha empate, regra processada por último
+
+      No caso dos seletores
+      1. Inline
+      2. ID
+      3. Classes, pseudo-classes e atributos
+      4. Elementos, pseudo-elementos
+     -->
+    <div id="exemplo" class="principal">
+      <p>Especificidade.</p>
+    </div>
+  </body>
+</html>
