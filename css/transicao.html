@@ -1,0 +1,41 @@
+<div class="retangulo"></div>
+<div class="quadrado"></div>
+<div class="retangulo2"></div>
+
+
+<style>
+    .retangulo {
+        width: 100px;
+        height: 40px;
+        background-color: blue;
+        transition: width 2s, background-color 5s;
+    }
+
+    .retangulo2 {
+        width: 100px;
+        height: 40px;
+        background-color: red;
+        transition: transform 2s;
+    }
+
+    .retangulo2:hover {
+        transform: rotate(45deg);
+    }
+
+    .retangulo:hover {
+        width: 200px;
+        background-color: brown;
+    }
+
+    .retangulo:hover~.quadrado {
+        opacity: 1;
+    }
+
+    .quadrado {
+        width: 80px;
+        height: 80px;
+        background-color: chocolate;
+        opacity: 0;
+        transition: opacity 4s;
+    }
+</style>
